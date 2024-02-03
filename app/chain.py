@@ -5,7 +5,7 @@ from langchain_exa import ExaSearchRetriever
 from langchain_openai import ChatOpenAI
 
 
-retriever = ExaSearchRetriever(k=3, highlights=True)
+retriever = ExaSearchRetriever(k=3, highlights=True, include_domains=["https://www.cancer.gov/publications/patient-education"])
 
 document_prompt = PromptTemplate.from_template(
     """
